@@ -1,12 +1,12 @@
 __S0 8000 0 ABS 0
-__S1 7 0 ABS 0
+__S1 E 0 ABS 0
 __S4 0 0 ABS 0
 __S5 0 0 ABS 0
 __Hintentry 0 0 ABS 0
 __Lintentry 0 0 ABS 0
 _LATB F8A 0 ABS 0
 _LATD F8C 0 ABS 0
-_main 7EFC 0 CODE 0
+_main 7DEC 0 CODE 0
 ___sp 0 0 STACK 2
 start 0 0 CODE 0
 _TRISB F93 0 ABS 0
@@ -17,7 +17,7 @@ __HRAM 0 0 ABS 0
 __LRAM 1 0 ABS 0
 __Hconfig 30000E 0 CONFIG 4
 __Lconfig 0 0 CONFIG 4
-main@i 3 0 COMRAM 1
+main@i 6 0 COMRAM 1
 __Hbigram 0 0 ABS 0
 __Lbigram 0 0 ABS 0
 __Hrparam 0 0 COMRAM 1
@@ -70,7 +70,7 @@ __Ldata 0 0 ABS 0
 isa$std 1 0 ABS 0
 stackhi 0 0 ABS 0
 __Hheap 0 0 HEAP 7
-_OSCILADOR_Init 7EDE 0 CODE 0
+_OSCILADOR_Init 7DCE 0 CODE 0
 __Lheap 0 0 HEAP 7
 __Htemp 0 0 COMRAM 1
 __Ltemp 0 0 COMRAM 1
@@ -87,9 +87,9 @@ __Lrbss 0 0 COMRAM 1
 __Htext 0 0 ABS 0
 __Ltext 0 0 ABS 0
 ___heap_lo 0 0 ABS 0
-end_of_initialization 7ED8 0 CODE 0
-_PORT_Init 7EE8 0 CODE 0
-__end_of_OSCILADOR_Init 7EE8 0 CODE 0
+end_of_initialization 7DC8 0 CODE 0
+_PORT_Init 7DD8 0 CODE 0
+__end_of_OSCILADOR_Init 7DD8 0 CODE 0
 __Hibigdata 0 0 CODE 0
 __Libigdata 0 0 CODE 0
 __Hifardata 0 0 CODE 0
@@ -116,16 +116,16 @@ __Htext0 0 0 ABS 0
 __Ltext0 0 0 ABS 0
 __Htext1 0 0 ABS 0
 __Ltext1 0 0 ABS 0
-__ptext0 7EFC 0 CODE 0
+__ptext0 7DEC 0 CODE 0
 __Htext2 0 0 ABS 0
 __Ltext2 0 0 ABS 0
-__ptext1 7EE8 0 CODE 0
-__ptext2 7EDE 0 CODE 0
+__ptext1 7DD8 0 CODE 0
+__ptext2 7DCE 0 CODE 0
 __Hclrtext 0 0 ABS 0
 __Lclrtext 0 0 ABS 0
-__end_of__initialization 7ED8 0 CODE 0
+__end_of__initialization 7DC8 0 CODE 0
 ___rparam_used 1 0 ABS 0
-__end_of_PORT_Init 7EFC 0 CODE 0
+__end_of_PORT_Init 7DEC 0 CODE 0
 __Hidata 0 0 CODE 0
 __Lidata 0 0 CODE 0
 __Hrdata 0 0 COMRAM 1
@@ -141,7 +141,7 @@ __HcstackCOMRAM 0 0 ABS 0
 __Lspace_0 0 0 ABS 0
 __LcstackCOMRAM 0 0 ABS 0
 __pcstackCOMRAM 1 0 COMRAM 1
-__Hspace_1 7 0 ABS 0
+__Hspace_1 E 0 ABS 0
 __Lspace_1 0 0 ABS 0
 __Hsmallconst 0 0 SMALLCONST 0
 __Lsmallconst 0 0 SMALLCONST 0
@@ -151,14 +151,16 @@ __Hnvbit 0 0 COMRAM 1
 __Lnvbit 0 0 COMRAM 1
 __Hcinit 0 0 ABS 0
 __Lcinit 0 0 ABS 0
-__pcinit 7ED8 0 CODE 0
+__pcinit 7DC8 0 CODE 0
 __ramtop 800 0 RAM 0
 __mediumconst 0 0 MEDIUMCONST 0
 __Hconst 0 0 CONST 0
 __Lconst 0 0 CONST 0
 __Hspace_4 60000E 0 ABS 0
 __Lspace_4 0 0 ABS 0
-main@i_93 5 0 COMRAM 1
+main@i_93 8 0 COMRAM 1
+main@i_94 A 0 COMRAM 1
+main@i_95 C 0 COMRAM 1
 ___inthi_sp 0 0 STACK 2
 ___intlo_sp 0 0 STACK 2
 _OSCCONbits FD3 0 ABS 0
@@ -172,55 +174,64 @@ intlevel0 0 0 CODE 0
 intlevel1 0 0 CODE 0
 intlevel2 0 0 CODE 0
 intlevel3 0 0 CODE 0
-start_initialization 7ED8 0 CODE 0
-__initialization 7ED8 0 CODE 0
+start_initialization 7DC8 0 CODE 0
+__initialization 7DC8 0 CODE 0
 __activetblptr 0 0 ABS 0
 %segments
 reset_vec 0 3 CODE 0 0
-cstackCOMRAM 1 6 COMRAM 1 1
-text0 7EFC 7FFF CODE 7EFC 0
-text1 7EE8 7EFB CODE 7EE8 0
-text2 7EDE 7EE7 CODE 7EDE 0
-cinit 7ED8 7EDD CODE 7ED8 0
+cstackCOMRAM 1 D COMRAM 1 1
+text0 7DEC 7FFF CODE 7DEC 0
+text1 7DD8 7DEB CODE 7DD8 0
+text2 7DCE 7DD7 CODE 7DCE 0
+cinit 7DC8 7DCD CODE 7DC8 0
 %locals
 dist/default/production\FantastiCarLeds.X.production.o
 C:/Users/jorda/.mchp_packs/Microchip/PIC18F-K_DFP/1.8.249/xc8\pic\include\proc\pic18f45k50.h
-C:\Users\jorda\AppData\Local\Temp\xcAsrrk.s
-1009 7ED8 0 CODE 0
-1011 7ED8 0 CODE 0
-1014 7ED8 0 CODE 0
-1020 7ED8 0 CODE 0
-1022 7ED8 0 CODE 0
-1023 7EDA 0 CODE 0
+C:\Users\jorda\AppData\Local\Temp\xcAsnbo.s
+1009 7DC8 0 CODE 0
+1011 7DC8 0 CODE 0
+1014 7DC8 0 CODE 0
+1020 7DC8 0 CODE 0
+1022 7DC8 0 CODE 0
+1023 7DCA 0 CODE 0
 main.c
-7 7EFC 0 CODE 0
-9 7EFC 0 CODE 0
-10 7F00 0 CODE 0
-11 7F04 0 CODE 0
-12 7F08 0 CODE 0
-19 7F0C 0 CODE 0
-20 7F34 0 CODE 0
-21 7F38 0 CODE 0
-22 7F54 0 CODE 0
-23 7F6C 0 CODE 0
-25 7F74 0 CODE 0
-26 7F9C 0 CODE 0
-27 7FA0 0 CODE 0
-28 7FBC 0 CODE 0
-29 7FD4 0 CODE 0
-31 7FDC 0 CODE 0
-33 7FF4 0 CODE 0
-34 7FF6 0 CODE 0
+7 7DEC 0 CODE 0
+9 7DEC 0 CODE 0
+10 7DF0 0 CODE 0
+11 7DF4 0 CODE 0
+12 7DF8 0 CODE 0
+19 7DFC 0 CODE 0
+20 7E24 0 CODE 0
+21 7E28 0 CODE 0
+22 7E44 0 CODE 0
+23 7E5C 0 CODE 0
+25 7E64 0 CODE 0
+26 7E8C 0 CODE 0
+27 7E90 0 CODE 0
+28 7EAC 0 CODE 0
+29 7EC4 0 CODE 0
+31 7ECC 0 CODE 0
+33 7EE4 0 CODE 0
+34 7F0C 0 CODE 0
+35 7F10 0 CODE 0
+36 7F42 0 CODE 0
+37 7F5A 0 CODE 0
+39 7F62 0 CODE 0
+40 7F8A 0 CODE 0
+41 7F8E 0 CODE 0
+42 7FC0 0 CODE 0
+43 7FD8 0 CODE 0
+46 7FE0 0 CODE 0
 main.c
-45 7EE8 0 CODE 0
-47 7EE8 0 CODE 0
-48 7EEE 0 CODE 0
-49 7EF2 0 CODE 0
-50 7EF6 0 CODE 0
-52 7EFA 0 CODE 0
+58 7DD8 0 CODE 0
+60 7DD8 0 CODE 0
+61 7DDE 0 CODE 0
+62 7DE2 0 CODE 0
+63 7DE6 0 CODE 0
+65 7DEA 0 CODE 0
 librerias_pic/config_device.c
-5 7EDE 0 CODE 0
-7 7EDE 0 CODE 0
-8 7EE2 0 CODE 0
-9 7EE4 0 CODE 0
-10 7EE6 0 CODE 0
+5 7DCE 0 CODE 0
+7 7DCE 0 CODE 0
+8 7DD2 0 CODE 0
+9 7DD4 0 CODE 0
+10 7DD6 0 CODE 0

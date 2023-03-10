@@ -31,7 +31,7 @@
 [v _OSCILADOR_Init OSCILADOR_Init `(v  1 e 1 0 ]
 "7 C:\Users\jorda\OneDrive\Documentos\Denil_Projects\MMJ\FantastiCarLeds.X\main.c
 [v _main main `(i  1 e 2 0 ]
-"45
+"58
 [v _PORT_Init PORT_Init `(v  1 e 1 0 ]
 "277 C:/Users/jorda/.mchp_packs/Microchip/PIC18F-K_DFP/1.8.249/xc8\pic\include\proc\pic18f45k50.h
 [v _ANSELB ANSELB `VEuc  1 e 1 @3932 ]
@@ -65,16 +65,20 @@
 "7 C:\Users\jorda\OneDrive\Documentos\Denil_Projects\MMJ\FantastiCarLeds.X\main.c
 [v _main main `(i  1 e 2 0 ]
 {
+"39
+[v main@i_95 i `i  1 a 2 11 ]
+"33
+[v main@i_94 i `i  1 a 2 9 ]
 "25
-[v main@i_93 i `i  1 a 2 4 ]
+[v main@i_93 i `i  1 a 2 7 ]
 "19
-[v main@i i `i  1 a 2 2 ]
-"41
+[v main@i i `i  1 a 2 5 ]
+"54
 } 0
-"45
+"58
 [v _PORT_Init PORT_Init `(v  1 e 1 0 ]
 {
-"52
+"65
 } 0
 "5 C:\Users\jorda\OneDrive\Documentos\Denil_Projects\MMJ\FantastiCarLeds.X\librerias_pic/config_device.c
 [v _OSCILADOR_Init OSCILADOR_Init `(v  1 e 1 0 ]

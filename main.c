@@ -19,21 +19,34 @@ int main ( void ) {
         for ( int i = 0; i <= 7; i++ ) {
             LATB = 0x00;
             LATD = ( 1 << i );
-            __delay_ms(100);
+            __delay_ms(50);
         }
         
         for ( int i = 0; i <= 7; i++ ) {
             LATD = 0x00;
             LATB = ( 1 << i );
-            __delay_ms(100);
+            __delay_ms(50);
         }
         
-        __delay_ms(200);
+        __delay_ms(100);
         
-        LATD = 0xff;
-        LATB = 0xff;
+        for ( int i = 0; i <= 7; i++ ) {
+            LATD = 0x00;
+            LATB = ( 10000000 >> i );
+            __delay_ms(50);
+        }
+        
+        for ( int i = 0; i <= 7; i++ ) {
+            LATB = 0x00;
+            LATD = ( 10000000 >> i );
+            __delay_ms(50);
+        }
         
         
+        __delay_ms(100);
+    
+        LATD = 0x00;
+        LATB = 0x00;
         
         
         
